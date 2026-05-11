@@ -17,3 +17,4 @@ Python으로 만든 이미지 처리 툴
 - Gradio
 
 ## 사용방법 
+- 코드 확인은 image_Tool.py를 확인해주세요.
