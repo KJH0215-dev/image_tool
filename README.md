@@ -15,3 +15,5 @@ Python으로 만든 이미지 처리 툴
 - Pillow
 - NumPy
 - Gradio
+
+## 사용방법 
