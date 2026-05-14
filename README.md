@@ -2,15 +2,13 @@
 - OpenCV와 NumPy로 구현한 이미지 필터를 Gradio로 UI를 구성한 프로젝트
 - Google Colab에서 바로 실행 가능
 ---
-### 프로젝트 개요
-- 게임, 영상 산업에서 사용되는 이미지 처리 기능을 만들고 싶었음
+### 만든 이유
 - 포토샵을 보면서 나만을 위한 포토샵을 만들어 봐야겠다는 목표로 프로젝트 시작함
-- 만든 이유
 - TA직군의 주요 업무인 컴퓨터의 그래픽과 이미지 필터링에 대해 좀 알고 싶었음
 - 막 여러 파일 깔고 그러는거 귀찮아서 그냥 다 깔려 있는 구글 코랩 환경에서 하면 바로 데모 버전까지 만들 수 있다 판단함
 ---
 ### 주요 기능
-- 카테고리	필터	설명
+- 카테고리 필터 설명
 - 기본 보정	밝기 / 대비 / 채도 / 색조	선형 변환 + HSV 색공간 변환
 - 컬러 그레이딩	RGB 채널 게인	채널별 가중치 조정 (영화 톤 보정 느낌)
 - 블러	Gaussian / Median / Bilateral / Box	4가지 블러 알고리즘
@@ -19,21 +17,20 @@
 - 스타일	흑백 / 세피아 / 반전 / 카툰 / 연필 스케치 / 유화	다양한 회화·만화 스타일
 - 픽셀화	모자이크	다운샘플 후 nearest 업샘플
 ---
-### 기술 스택
+### 사용된 기술
 - Python 3.10+
-- OpenCV (`opencv-python`) — 이미지 처리 핵심 라이브러리
-- NumPy — 픽셀 배열 연산
-- Gradio — 웹 UI 
-- Google Colab — 실행 환경
+- claude ai - 기초 코드 구현 및 오류 검토 
+- OpenCV (`opencv-python`) - 왠만한 거 다 있는 함수 뭉치 라이브러리
+- NumPy — 배열 연산 / 연산 속도 UP
+- Gradio — 웹 UI / UI를 만들기 귀찮았음
+- Google Colab — 실행 환경 / 따로 뭐 설치할 것이 없는게 강점
 ---
 ### 실행 방법
 - 방법 1. Google Colab (권장)
 - Google Colab 접속
 - `파일 → 노트북 업로드`에서 `image_filter_colab.ipynb` 업로드
-- 위에서부터 셀을 순서대로 실행 (`Shift + Enter`)
 - 마지막 셀 실행 시 출력되는 Gradio 링크 클릭
-- 로컬 링크: `http://127.0.0.1:7860`
-- 공유 링크: `https://xxxxx.gradio.live` (72시간 유효)
+- 공유 링크: `https://xxxxx.gradio.live` (72시간 지나면 만료되니 주의)
 
 ### 핵심 함수 설명
 - `adjust_basic(image, brightness, contrast, saturation, hue)`
@@ -87,4 +84,4 @@ RGB 채널 / 세피아	컬러 그레이딩 LUT (영화 톤 보정)
 - Bilateral Filter (논문 원문)
 ---
 ### 라이선스
-- '학습·발표 목적의 프로젝트입니다.'
+- 학습·발표 목적의 프로젝트입니다.
